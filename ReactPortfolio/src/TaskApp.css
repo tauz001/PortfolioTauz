@@ -1,0 +1,170 @@
+/* Use unique class names and prefix everything with .task-app- to avoid conflicts */
+
+/* Background for the task app page only */
+.task-app-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #232946 0%, #181c2b 60%, #22223b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main container */
+.task-app-container {
+  width: 100%;
+  max-width: 420px;
+  margin: 48px auto;
+  padding: 32px 20px 24px 20px;
+  background: rgba(36, 40, 59, 0.92);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+  backdrop-filter: blur(18px);
+  border: 1.5px solid #393e60;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: task-app-fadeInUp 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Fade in up animation */
+@keyframes task-app-fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.task-app-title {
+  margin-bottom: 24px;
+  color: #e0e6f7;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Input row */
+.task-app-input-row {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 22px;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-app-input {
+  background: rgba(24, 28, 43, 0.92);
+  border: 1.5px solid #2d314d;
+  color: #e0e6f7;
+  padding: 10px 12px;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  flex: 1 1 0;
+  min-width: 0;
+  transition: border 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 6px #181c2b;
+  backdrop-filter: blur(4px);
+}
+.task-app-input:focus {
+  border: 1.5px solid #4deeea;
+  box-shadow: 0 0 10px #2bb3b1;
+}
+
+/* Add button */
+.task-app-add-btn {
+  background: #2bb3b1;
+  color: #181c2b;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  min-width: 70px;
+  box-shadow: 0 0 8px #2bb3b1;
+  transition: background 0.3s, box-shadow 0.3s, color 0.3s;
+}
+.task-app-add-btn:hover {
+  background: #4deeea;
+  color: #e0e6f7;
+}
+
+/* Task list items */
+.task-app-task-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: rgba(24, 28, 43, 0.7);
+  border-radius: 10px;
+  border: 1.5px solid #2d314d;
+  margin-bottom: 14px;
+  box-shadow: 0 0 6px #232946;
+  animation: task-app-fadeInUp 0.7s;
+  padding: 8px 10px;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.task-app-task-name {
+  color: #e0e6f7;
+  font-size: 1.05rem;
+  flex: 2 1 0;
+  word-break: break-word;
+}
+.task-app-task-date {
+  color: #a0a4b8;
+  font-size: 0.98rem;
+  flex: 1 1 0;
+  text-align: right;
+}
+
+/* Delete button */
+.task-app-delete-btn {
+  background: #b82e4c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 0;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  min-width: 60px;
+  box-shadow: 0 0 8px #b82e4c;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.task-app-delete-btn:hover {
+  background: #ff3860;
+}
+
+/* No tasks message */
+.task-app-no-tasks {
+  color: #a0a4b8;
+  text-align: center;
+  margin: 32px 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px #232946;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .task-app-container {
+    padding: 14px 2vw;
+    max-width: 98vw;
+  }
+  .task-app-task-row, .task-app-input-row {
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+  }
+  .task-app-task-name, .task-app-task-date, .task-app-add-btn, .task-app-delete-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

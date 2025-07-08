@@ -1,0 +1,200 @@
+/* WeatherApp.css */
+
+/* body{
+    padding: 0%;
+} */
+.weather-root-bg {
+  /* background: #121212; */
+  /* background-image: url("https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?_gl=1*1wy10pu*_ga*MTk2OTUxNDMwLjE3NDQwOTE4NzA.*_ga_8JE65Q40S6*czE3NTA4NDQ0NzAkbzE1JGcxJHQxNzUwODQ0NzY3JGozMyRsMCRoMA.."); */
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  /* padding: 20px; */
+}
+
+.weather-app-main {
+  background: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 350px;
+  padding: 25px;
+  color: #ffffff;
+  backdrop-filter: blur(2px);
+}
+
+/* Header Section */
+.weather-app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.weather-app-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.weather-app-date-time {
+  text-align: right;
+}
+
+.weather-app-date {
+  font-size: 14px;
+  color: #b0b0b0;
+  margin: 0;
+}
+
+.weather-app-time {
+  font-size: 14px;
+  color: #b0b0b0;
+  margin: 0;
+}
+
+/* Current Weather Summary */
+.weather-app-current {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.weather-app-temp {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.weather-app-condition {
+  font-size: 16px;
+  color: #b0b0b0;
+}
+
+/* Weather Details Grid */
+.weather-app-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.weather-app-detail-card {
+  background: transparent;
+  border-radius: 12px;
+  padding: 14px;
+  backdrop-filter: blur(1000px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  /* color: aliceblue; */
+}
+
+.detail-card-title {
+  font-size: 12px;
+  color: #b0b0b0;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-card-value {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.detail-card-extra {
+  font-size: 12px;
+  color: #b0b0b0;
+  margin-top: 4px;
+}
+
+/* Divider */
+.weather-app-divider {
+  height: 1px;
+  background: #333333;
+  margin: 20px 0;
+}
+
+/* Additional Info */
+.weather-app-additional {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Search Bar */
+.weather-app-search-row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.weather-app-input {
+  flex: 1;
+  padding: 12px 16px;
+  background: #2a2a2a;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  font-size: 14px;
+  color: #ffffff;
+  outline: none;
+}
+
+.weather-app-input::placeholder {
+  color: #666666;
+}
+
+.weather-app-search-btn {
+  background: #3a3a3a;
+  color: white;
+  border: none;
+  padding: 0 16px;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Footer */
+.weather-app-footer {
+  font-size: 10px;
+  color: #666666;
+  text-align: center;
+  margin-top: 25px;
+}
+
+/* React Icons styling */
+.weather-icon {
+  font-size: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+  color: white;
+}
+
+.searchBar{
+    padding: 10px;
+    border: 0.1px black solid;
+    border-radius: 20px 0px 0px 20px ;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    min-width: 70%;
+    color: white;
+
+}
+.searchBtn{
+    padding: 10px;
+    border-radius: 0px 20px 20px 0px ;
+    border: 0.1px black solid;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    min-width: 30%;
+    color: white;
+    transition: all 0.4s linear;
+    margin-bottom: 10px;
+}
+.searchBtn:hover{
+    color: white;
+    background-color: black;
+}
