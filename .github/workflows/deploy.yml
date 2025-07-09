@@ -24,16 +24,18 @@ jobs:
 
       - name: Install dependencies
         run: |
-              cd ReactPortfolio
-              npm install
+          cd ReactPortfolio
+          npm install
 
       - name: Build
-        run: npm run build
+        run: |
+          cd ReactPortfolio
+          npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./ReactPortfolio/dist
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
