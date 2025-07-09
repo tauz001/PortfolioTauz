@@ -69,7 +69,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/PortfolioTauz/">
       <Routes>
         {/* Portfolio website with header/footer */}
         <Route
