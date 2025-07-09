@@ -13,7 +13,7 @@ import TaskAppImg from "./assets/taskAppImg.png"
 import PortfolioImg from "./assets/portfolioAppImg.png"
 import weatherAppImg from "./assets/weatherAppImg.png"
 import TaskTrackerApp from "./fragments/TaskTrackerApp"
-import SplashCursor from './SplashCursor'
+import SplashCursor from './reactbit-compo/SplashCursor'
 
 
 
