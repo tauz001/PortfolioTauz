@@ -47,7 +47,7 @@ function App() {
   const skillCategories = [
     {
       title: "Frontend",
-      skills: ["HTML5", "CSS3", "JavaScript", "TypeScript", "Bootstrap", "SASS/SCSS", "React.js", "Redux"],
+      skills: ["HTML5", "CSS3", "JavaScript", "TypeScript", "Bootstrap", "SASS/SCSS", "React", "Redux"],
     },
     {
       title: "Backend",
