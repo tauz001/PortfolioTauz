@@ -15,7 +15,7 @@ const ContactSection = () => {
 
       <div className="contact-container">
         <div>
-          <p>I'm currently open For freelance work and job opportunities. Feel free to reach out if you have a project in mind or want to discuss potential collaboration.</p>
+          <p>Feel free to reach out if you have a project in mind or want to discuss potential collaboration.</p>
 
           <div className="contact-methods">
             <div className="contact-method">

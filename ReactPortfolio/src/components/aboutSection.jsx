@@ -7,7 +7,7 @@ const AboutSection = () => {
 
       <div className="about-content">
         <div className="about-text">
-          <p>Hi there! I'm a passionate full stack web developer with a keen eye for creating elegant, efficient, and user-friendly web applications. My journey in web development started 5 years ago, and I've been honing my skills ever since.</p>
+          <p>Hi there! I'm a passionate full stack web developer with a keen eye for creating elegant, efficient, and user-friendly web applications. My journey in web development started a years ago, and I've been honing my skills ever since.</p>
           <p>I specialize in building modern web applications using various technologies. My approach combines technical expertise with creative problem-solving to deliver exceptional digital experiences.</p>
           <p>Outside of coding, I enjoy exploring new technologies, contributing to open-source projects, and continuously expanding my knowledge through ongoing learning and professional development.</p>
 
@@ -17,7 +17,7 @@ const AboutSection = () => {
               <li>Responsive Web Design</li>
               <li>Frontend Development</li>
               <li>Backend Systems</li>
-              <li>Database Architecture</li>
+              {/* <li>Database Architecture</li> */}
               <li>API Development</li>
               <li>Performance Optimization</li>
             </ul>
