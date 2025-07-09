@@ -1,5 +1,7 @@
 // import React from "react"
-import profileImg from "../assets/file_00000000fd0861f8a18b81556a2470b5.png"
+import ProfileCard from "../../reactbit/ProfileCard"
+// import profileImg from "../assets/file_00000000fd0861f8a18b81556a2470b5.png"
+// import profileAvtar from "../../src/assets/profileAvtar"
 const AboutSection = () => {
   return (
     <section id="about" className="section-container">
@@ -24,13 +26,14 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="about-image">
+        {/* <div className="about-image">
           <div className="image-container">
             <div className="placeholder">
               <img src={profileImg} alt="img" />
             </div>
           </div>
-        </div>
+        </div> */}
+        <ProfileCard name="Mohammad Tauz" title="MERN Stack" handle="@tauz001" status="Online" contactText="Contact Me" avatarUrl="../../src/assets/profileAvtar.png" showUserInfo={true} enableTilt={true} onContactClick={() => console.log("Contact clicked")} />
       </div>
     </section>
   )
