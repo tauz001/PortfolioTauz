@@ -1,5 +1,5 @@
 // import React from "react"
-import ProfileCard from "../../reactbit/ProfileCard"
+import ProfileCard from "../../reactbit/ProfileCard/ProfileCard"
 // import profileImg from "../assets/file_00000000fd0861f8a18b81556a2470b5.png"
 // import profileAvtar from "../../src/assets/profileAvtar"
 const AboutSection = () => {
