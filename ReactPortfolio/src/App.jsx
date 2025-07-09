@@ -13,7 +13,6 @@ import TaskAppImg from "./assets/taskAppImg.png"
 import PortfolioImg from "./assets/portfolioAppImg.png"
 import weatherAppImg from "./assets/weatherAppImg.png"
 import TaskTrackerApp from "./fragments/TaskTrackerApp"
-import SplashCursor from "../reactbit/SplashCursor"
 
 function App() {
   const projects = [
@@ -71,7 +70,6 @@ function App() {
 
   return (
     <BrowserRouter basename="/PortfolioTauz/">
-      <SplashCursor />
       <Routes>
         {/* Portfolio website with header/footer */}
         <Route
