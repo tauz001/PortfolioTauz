@@ -1,14 +1,15 @@
 import {FaGithub} from "react-icons/fa6"
 import {VscLinkExternal} from "react-icons/vsc"
 import {Link} from "react-router-dom" // Add this import
+import SpotlightCard from '../../reactbit/SpotlightCard/SpotlightCard';
 
 const ProjectItem = ({project}) => {
   // Helper to check if the URL is external
   const isExternal = url => url.startsWith("http://") || url.startsWith("https://")
 
   return (
-    <>
-      <div className="project-card animate-fade-in">
+    <SpotlightCard className="custom-spotlight-card project-card" spotlightColor="#8b5cf6">
+      {/* <div className="project-card animate-fade-in"> */}
         <div className="project-image">
           <img src={project.image} alt={project.title}></img>
           <div className="project-image-overlay">
@@ -47,8 +48,8 @@ const ProjectItem = ({project}) => {
               ))}
           </div>{" "}
         </div>
-      </div>
-    </>
+      {/* </div> */}
+    </SpotlightCard>
   )
 }
 

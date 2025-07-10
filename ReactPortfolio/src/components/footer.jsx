@@ -1,11 +1,11 @@
-import React, { use, useEffect, useState } from "react"
-import { MdEmail } from "react-icons/md";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-
+import React, {use, useEffect, useState} from "react"
+import {MdEmail} from "react-icons/md"
+import {FaGithub} from "react-icons/fa"
+import {FaLinkedin} from "react-icons/fa"
+import DotGrid from "../../reactbit/DotGrid/DotGrid"
 
 const Footer = () => {
-   const [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString())
+  const [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString())
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -26,13 +26,13 @@ const Footer = () => {
 
           <div className="social-links">
             <a href="https://github.com/tauz001" target="_blank" rel="noopener noreferrer">
-              <FaGithub/>
+              <FaGithub />
             </a>
             <a href="https://www.linkedin.com/in/mohammad-tauz-88861235a/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin/>
+              <FaLinkedin />
             </a>
             <a href="mailto:tauzans609@gmail.com">
-              <MdEmail/>
+              <MdEmail />
             </a>
           </div>
         </div>

@@ -1,11 +1,12 @@
 // import React from "react"
+import CurvedLoop from "../../reactbit/CurvedLoop/CurvedLoop"
 
 import SkillsItem from "./skillsItem"
 
 const SkillsSection = ({skillCategories}) => {
   return (
-    <section id="skills" className="section-container">
-      <h2 className ="section-title">My Skills</h2>
+    <section id="skills" className="section-container-skills">
+      <h2 className="section-title">My Skills</h2>
 
       <div className="skills-grid" id="skills-container">
         {skillCategories.map((skill, index) => (
@@ -13,6 +14,7 @@ const SkillsSection = ({skillCategories}) => {
         ))}
         {/* <!-- Skill categories will be added dynamically with JavaScript --> */}
       </div>
+      <CurvedLoop marqueeText="Be ✦ Creative ✦ With ✦ React ✦ Bits ✦" speed={3} curveAmount={0} direction="right" interactive={true} className="custom-text-style" />
     </section>
   )
 }
