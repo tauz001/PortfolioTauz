@@ -13,8 +13,6 @@ import TaskAppImg from "./assets/taskAppImg.png"
 import PortfolioImg from "./assets/portfolioAppImg.png"
 import weatherAppImg from "./assets/weatherAppImg.png"
 import TaskTrackerApp from "./fragments/TaskTrackerApp"
-import ScrollProgressTracker from "./components/ScrollProgressTracker"
-// import htmlIcon from "./assets/html.svg"
 function App() {
   const projects = [
     {
@@ -77,13 +75,11 @@ function App() {
           path="/"
           element={
             <MainLayout>
-              <ScrollProgressTracker>
-                <HeroSection />
-                <AboutSection />
-                <ProjectSection projects={projects} />
-                <SkillsSection skillCategories={skillCategories} />
-                <ContactSection />
-              </ScrollProgressTracker>
+              <HeroSection />
+              <AboutSection />
+              <ProjectSection projects={projects} />
+              <SkillsSection skillCategories={skillCategories} />
+              <ContactSection />
             </MainLayout>
           }
         />
