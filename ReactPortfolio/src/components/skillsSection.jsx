@@ -1,6 +1,5 @@
 // import React from "react"
 import CurvedLoop from "../../reactbit/CurvedLoop/CurvedLoop"
-
 import SkillsItem from "./skillsItem"
 
 const SkillsSection = ({skillCategories}) => {
@@ -14,7 +13,7 @@ const SkillsSection = ({skillCategories}) => {
         ))}
         {/* <!-- Skill categories will be added dynamically with JavaScript --> */}
       </div>
-      <CurvedLoop marqueeText="Be ✦ Creative ✦ With ✦ React ✦ Bits ✦" speed={3} curveAmount={0} direction="right" interactive={true} className="custom-text-style" />
+      <CurvedLoop marqueeText="Collaborative ✦ Scalable ✦ Optimized ✦ Interactive ✦ Secure ✦" speed={3} curveAmount={100} direction="right" interactive={true} className="custom-text-style" />
     </section>
   )
 }
