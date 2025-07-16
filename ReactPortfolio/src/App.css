@@ -572,11 +572,17 @@ header .container {
 }
 
 .skills span {
-  padding: 0.5rem 1rem;
+  padding: 5px;
   background-color: var(--background);
   border-radius: var(--radius);
   font-size: 0.875rem;
   font-weight: 500;
+}
+
+.skill-img-name-container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 /* Contact Section */

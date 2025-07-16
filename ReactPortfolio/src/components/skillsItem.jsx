@@ -6,7 +6,10 @@ const SkillsItem = ({skill}) => {
       <h3 className="text-purple">{skill.title}</h3>
       <div className="skills">
         {skill.skills.map((skill, idx) => (
-          <span key={idx}>{skill}</span>
+          <span key={idx} className="skill-img-name-container">
+            <img src={skill.skillImg} alt="" width={"15px"} />
+            <span>{skill.skillName}</span>
+          </span>
         ))}
       </div>{" "}
     </div>

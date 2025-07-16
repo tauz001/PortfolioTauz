@@ -46,19 +46,84 @@ function App() {
   const skillCategories = [
     {
       title: "Frontend",
-      skills: ["HTML5", "CSS3", "JavaScript", "TypeScript", "Bootstrap", "SASS/SCSS", "React", "Redux"],
+      skills: [
+        {
+          skillName: "HTML5",
+          skillImg: "https://cdn.simpleicons.org/html5",
+        },
+        {
+          skillName: "CSS3",
+          skillImg: "https://cdn.simpleicons.org/css",
+        },
+        {
+          skillName: "SASS",
+          skillImg: "https://cdn.simpleicons.org/sass",
+        },
+        {
+          skillName: "JavaScript",
+          skillImg: "https://cdn.simpleicons.org/javascript",
+        },
+        {
+          skillName: "TypeScript",
+          skillImg: "https://cdn.simpleicons.org/typeScript",
+        },
+        {
+          skillName: "Bootstrap",
+          skillImg: "https://cdn.simpleicons.org/Bootstrap",
+        },
+        {
+          skillName: "Tailwind",
+          skillImg: "https://cdn.simpleicons.org/tailwindcss",
+        },
+        {
+          skillName: "React",
+          skillImg: "https://cdn.simpleicons.org/react",
+        },
+        {
+          skillName: "Redux",
+          skillImg: "https://cdn.simpleicons.org/redux",
+        },
+      ],
     },
+    // {"CSS3"}, {"JavaScript"}, {"TypeScript"}, {"Bootstrap"}, {"SASS/SCSS"}, {"React"}, {"Redux"}
     {
       title: "Backend",
-      skills: ["Node.js", "Express"],
+      skills: [
+        {
+          skillName: "Node",
+          skillImg: "https://cdn.simpleicons.org/node.js",
+        },
+        {
+          skillName: "Express",
+          skillImg: "https://cdn.simpleicons.org/express/white",
+        },
+      ],
     },
     {
       title: "Database",
-      skills: ["MongoDB", "MySQL"],
+      skills: [
+        {
+          skillName: "MongoDB",
+          skillImg: "https://cdn.simpleicons.org/mongodb",
+        },
+        {
+          skillName: "MySql",
+          skillImg: "https://cdn.simpleicons.org/mysql",
+        },
+      ],
     },
     {
       title: "DevOps & Tools",
-      skills: ["Git", "GitHub"],
+      skills: [
+        {
+          skillName: "Git",
+          skillImg: "https://cdn.simpleicons.org/git",
+        },
+        {
+          skillName: "GitHub",
+          skillImg: "https://cdn.simpleicons.org/github/white",
+        },
+      ],
     },
   ]
 
