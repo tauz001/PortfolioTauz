@@ -572,7 +572,7 @@ header .container {
 }
 
 .skills span {
-  padding: 5px;
+  padding: 3px 5px;
   background-color: var(--background);
   border-radius: var(--radius);
   font-size: 0.875rem;
