@@ -20,7 +20,7 @@ const HeroSection = () => {
       <div className="container">
         <div className="hero-content">
           <span className="text-purple font-medium">Hello, I'm</span>
-          <h1 className="hello">Asif Ans</h1>
+          <h1 className="hello">Tauz</h1>
           <h2 className="">Full Stack Web Developer</h2>
           <p className="">I build exceptional and accessible digital experiences for the web. Focused on creating clean, user-friendly interfaces backed by efficient code.</p>
 
