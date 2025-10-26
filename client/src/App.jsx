@@ -13,17 +13,9 @@ import TaskAppImg from "./assets/taskAppImg.png"
 import PortfolioImg from "./assets/portfolioAppImg.png"
 import weatherAppImg from "./assets/weatherAppImg.png"
 import TaskTrackerApp from "./fragments/TaskTrackerApp"
+import crestBlog from "./assets/crestBlog.png"
 function App() {
   const projects = [
-    {
-      title: "Task Management App",
-      description: "A productivity application for organizing tasks .",
-      image: `${TaskAppImg}`,
-      tags: ["HTML/CSS", "JavaScript", "DummyJSON API"],
-      githubUrl: "#",
-      liveUrl: "/projects/taskTrackerApp",
-    },
-
     {
       title: "Portfolio Website",
       description: "A personal portfolio website showcasing projects, skills and professional experience.",
@@ -40,6 +32,14 @@ function App() {
       tags: ["HTML/CSS", "JavaScript", "Weather API", "React"],
       githubUrl: "#",
       liveUrl: "/projects/weatherApp",
+    },
+    {
+      title: "Blogging Application",
+      description: "CrestBlog an application for sharing blogs and news articles, with image upload, real time comments, authentication and authorization ",
+      image: `${crestBlog}`,
+      tags: ["HTML/CSS", "JavaScript", "NewsAPI", "Next.js", "Vercel", "Jest", "Mongoose", "MongoDB", "Firebase", "Cloudinary"],
+      githubUrl: "https://github.com/tauz001/crestblog",
+      liveUrl: "https://crestblog.vercel.app/",
     },
   ]
 
@@ -83,6 +83,10 @@ function App() {
           skillName: "Redux",
           skillImg: "https://cdn.simpleicons.org/redux",
         },
+        {
+          skillName: "Next.JS",
+          skillImg: "https://cdn.simpleicons.org/nextdotjs/FFFFFF",
+        },
       ],
     },
     // {"CSS3"}, {"JavaScript"}, {"TypeScript"}, {"Bootstrap"}, {"SASS/SCSS"}, {"React"}, {"Redux"}
@@ -122,6 +126,14 @@ function App() {
         {
           skillName: "GitHub",
           skillImg: "https://cdn.simpleicons.org/github/white",
+        },
+        {
+          skillName: "Firebase",
+          skillImg: "https://cdn.simpleicons.org/firebase",
+        },
+        {
+          skillName: "Cloudinary",
+          skillImg: "https://cdn.simpleicons.org/cloudinary",
         },
       ],
     },
