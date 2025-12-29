@@ -87,6 +87,10 @@ function App() {
           skillName: "Next.JS",
           skillImg: "https://cdn.simpleicons.org/nextdotjs/FFFFFF",
         },
+        {
+          skillName: "WordPress",
+          skillImg: "https://cdn.simpleicons.org/wordpress",
+        },
       ],
     },
     // {"CSS3"}, {"JavaScript"}, {"TypeScript"}, {"Bootstrap"}, {"SASS/SCSS"}, {"React"}, {"Redux"}
@@ -139,10 +143,10 @@ function App() {
     },
   ]
 
-  const [taskList, setTaskList] = useState([])
-  const handleDeleteTask = deleteIndex => {
-    setTaskList(taskList => taskList.filter((_, idx) => idx !== deleteIndex))
-  }
+  // const [taskList, setTaskList] = useState([])
+  // const handleDeleteTask = deleteIndex => {
+  //   setTaskList(taskList => taskList.filter((_, idx) => idx !== deleteIndex))
+  // }
 
   return (
     <BrowserRouter basename="/PortfolioTauz/">
